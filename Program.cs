@@ -9,7 +9,7 @@ if (int.TryParse(month, out int monthint) == false || int.TryParse(day, out int 
     Console.WriteLine("Пожалуйста, для месяца и дня введите ЧИСЛО.");
 }
 else
-{ if (((monthint == 1 || monthint == 3 || monthint == 5 || monthint == 7 || monthint == 8 || monthint == 10 || monthint == 12) && (dayint < 1 || dayint > 31)) || ((monthint == 4 || monthint == 6 || monthint == 9 || monthint == 11) && (dayint < 1 || dayint > 30)) || (monthint == 2 && (dayint < 1 || dayint > 29)) || monthint < 1 || monthint > 12 || name == null || surname == null)
+{ if (monthint == null || dayint == null || ((monthint == 1 || monthint == 3 || monthint == 5 || monthint == 7 || monthint == 8 || monthint == 10 || monthint == 12) && (dayint < 1 || dayint > 31)) || ((monthint == 4 || monthint == 6 || monthint == 9 || monthint == 11) && (dayint < 1 || dayint > 30)) || (monthint == 2 && (dayint < 1 || dayint > 29)) || monthint < 1 || monthint > 12 || name == null || surname == null)
     {
         Console.WriteLine("Achtung! Это не человек, а тестировщик!");
     }
